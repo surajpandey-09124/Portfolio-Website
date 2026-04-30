@@ -14,15 +14,15 @@ line-height:1.6;
 .main{
     width:100%; 
     height:auto;
+    display:flex;
 }
 
 .m1{
     width:30%;
     background:#2a2a2a;
     border:1px solid #3a3a3a;
-    height:800px;
-    float:left;
-    margin:50px 20px 0 150px;
+    height:110vh;
+    margin:50px 20px 0 90px;
     border-radius:16px;
     padding:40px;    
 }
@@ -31,9 +31,9 @@ line-height:1.6;
     width:50%;
     background:#2a2a2a;
     border:1px solid #3a3a3a;
-    height:auto;
-    float:left;
-    margin:50px 0 0 100px;
+    height:340vh;
+    /* float:left; */
+    margin:50px 0 0 90px;
     border-radius:16px;
     padding:40px;
 }
@@ -41,20 +41,23 @@ line-height:1.6;
 /* profile information */
 
 .profile{
-    text-align:center;
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   flex-direction:column; 
 }
 
 .profile div{
-    width:50%;
+    width:200px;
     height:200px;
     border-radius:50%;
-    margin-left:80px;
+    /* margin-left:80px; */
     border:1px solid #2a2a2a;
 }
 
 .profile img{
-width:200;
-height:200px;
+width:100%;
+height:100%;
 border-radius:50%;
 /* margin:50px 0 0 100px; */
 border:1px solid #2a2a2a;
@@ -294,18 +297,22 @@ color:#e0e0e0
 }
 
 
-@media only screen and (max-width:600px){
+@media only screen and (max-width:768px){
+
+.main{
+    flex-direction:column;
+}
 
 .m1{
-    width:90%;
-    float:none;
-    margin:20px auto;
+    width:70%;
+    text-align:center;
 }
 
 .m2{
-    width:90%;
-    float:none;
-    margin:20px auto;
+    width:80%;
+    height:auto;
+    margin:30px auto;
+    /* border:1px solid white; */
 }
 
 .flex{
